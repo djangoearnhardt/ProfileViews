@@ -10,6 +10,7 @@
 		42012A282469913A00FFBE8C /* BusinessCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42012A272469913A00FFBE8C /* BusinessCardView.swift */; };
 		42012A2D2469973200FFBE8C /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42012A2C2469973200FFBE8C /* Fonts.swift */; };
 		42012A2F2469976A00FFBE8C /* FontStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42012A2E2469976A00FFBE8C /* FontStyles.swift */; };
+		42012A312469A23700FFBE8C /* CategoryAndDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42012A302469A23700FFBE8C /* CategoryAndDetails.swift */; };
 		4225588224676CCE00256806 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225588124676CCE00256806 /* AppDelegate.swift */; };
 		4225588424676CCE00256806 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225588324676CCE00256806 /* SceneDelegate.swift */; };
 		4225588624676CCE00256806 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4225588524676CCE00256806 /* ContentView.swift */; };
@@ -29,6 +30,7 @@
 		42012A272469913A00FFBE8C /* BusinessCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardView.swift; sourceTree = "<group>"; };
 		42012A2C2469973200FFBE8C /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
 		42012A2E2469976A00FFBE8C /* FontStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontStyles.swift; sourceTree = "<group>"; };
+		42012A302469A23700FFBE8C /* CategoryAndDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAndDetails.swift; sourceTree = "<group>"; };
 		4225587E24676CCE00256806 /* Profile Views.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Profile Views.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4225588124676CCE00256806 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4225588324676CCE00256806 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				4225588524676CCE00256806 /* ContentView.swift */,
 				4225589824676DE500256806 /* ProfileView.swift */,
 				42012A272469913A00FFBE8C /* BusinessCardView.swift */,
+				42012A302469A23700FFBE8C /* CategoryAndDetails.swift */,
 				422558A824677D8D00256806 /* TextListView.swift */,
 			);
 			path = Views;
@@ -208,6 +211,7 @@
 				422558A924677D8D00256806 /* TextListView.swift in Sources */,
 				4225588224676CCE00256806 /* AppDelegate.swift in Sources */,
 				4225589724676D4B00256806 /* Profile.swift in Sources */,
+				42012A312469A23700FFBE8C /* CategoryAndDetails.swift in Sources */,
 				42012A282469913A00FFBE8C /* BusinessCardView.swift in Sources */,
 				42012A2D2469973200FFBE8C /* Fonts.swift in Sources */,
 				4225589924676DE500256806 /* ProfileView.swift in Sources */,

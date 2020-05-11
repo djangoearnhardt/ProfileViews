@@ -16,14 +16,15 @@ struct ProfileView: View {
             Text("Contact Info").headlineStyle()
             Spacer()
                 .frame(height: 20)
+            
             BusinessCardView(profile: profile)
             Spacer()
                 .frame(height: 20)
-            VStack {
+
                 Text("Professional Bio").headlineStyle()
-            }
             Spacer()
                 .frame(height: 20)
+            
             VStack(alignment: .leading, spacing: 20) {
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.education != nil) {
