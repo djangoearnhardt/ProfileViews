@@ -10,7 +10,6 @@ import SwiftUI
 
 struct ProfileView: View {
     let profile: Profile
-    
     var body: some View {
         VStack {
             Text("Contact Info").headlineStyle()
@@ -28,23 +27,17 @@ struct ProfileView: View {
             VStack(alignment: .leading, spacing: 20) {
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.education != nil) {
-                        Text("Education: ")
-                            .font(.custom("QuattrocentoSans-Regular", size: 16))
-                        TextListView(education: profile.education!)
+                        CategoryAndDetails(category: "Education", details: profile.education)
                     }
                 }
-                HStack(alignment: .firstTextBaseline, spacing: 34) {
+                HStack(alignment: .firstTextBaseline) {
                     if (profile.groups != nil) {
-                        Text("Groups:")
-                        .font(.custom("QuattrocentoSans-Regular", size: 16))
-                        TextListView(education: profile.groups!)
+                        CategoryAndDetails(category: "Groups", details: profile.groups,spacing: 60)
                     }
                 }
-                HStack(alignment: .firstTextBaseline, spacing: 16) {
+                HStack(alignment: .firstTextBaseline) {
                     if (profile.recordedMusic != nil) {
-                        Text("Recorded \nMusic: ")
-                        .font(.custom("QuattrocentoSans-Regular", size: 16))
-                        TextListView(education: profile.recordedMusic!)
+                        CategoryAndDetails(category: "Recorded\nMusic", details: profile.recordedMusic)
                     }
                 }
             }

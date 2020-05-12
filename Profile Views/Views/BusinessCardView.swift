@@ -10,12 +10,15 @@ import SwiftUI
 
 struct BusinessCardView: View {
     let profile: Profile
+    var imageHeightAndWidth: CGFloat = 100
     
     var body: some View {
         HStack(spacing: 20) {
             VStack {
                 Image(profile.picture)
+                    .resizable()
                     .scaledToFit()
+                    .frame(width: imageHeightAndWidth, height: imageHeightAndWidth)
             }
             HStack(spacing: 5) {
                 VStack(alignment: .leading, spacing: 20){

@@ -11,21 +11,21 @@ import SwiftUI
 struct CategoryAndDetails: View {
     let category: String
     let details: [String]?
+    var spacing: CGFloat = 40
     
     var body: some View {
-        if details == nil {
-            return AnyView(EmptyView())
-        } else {
+        
         return AnyView(
-            VStack {
-            Text(category).bodyStyle()
-                Text(details![0])
-                Text(details![1])
+            HStack(alignment: .firstTextBaseline, spacing: spacing) {
+                Text(category).bodyStyle()
+                VStack {
+                    TextListView(details: details)
+                }
             }
-            )
+        )
     }
 }
-}
+
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
