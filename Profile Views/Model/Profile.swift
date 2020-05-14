@@ -16,5 +16,5 @@ struct Profile {
     let groups: [String]?
     let recordedMusic: [String]?
     let picture: String
-    let studioPolicy: [String]
+    let studioPolicy: [String]?
 }

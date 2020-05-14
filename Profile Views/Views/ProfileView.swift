@@ -11,6 +11,7 @@ import SwiftUI
 struct ProfileView: View {
     let profile: Profile
     var body: some View {
+        ScrollView {
         VStack {
             Text("Contact Info").headlineStyle()
             Spacer()
@@ -18,7 +19,7 @@ struct ProfileView: View {
             
             BusinessCardView(profile: profile)
             Spacer()
-                .frame(height: 20)
+                .frame(height: 40)
 
                 Text("Professional Bio").headlineStyle()
             Spacer()
@@ -27,26 +28,36 @@ struct ProfileView: View {
             VStack(alignment: .leading, spacing: 20) {
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.education != nil) {
-                        CategoryAndDetails(category: "Education", details: profile.education)
+                        CategoryAndDetails(category: "Education", bodyText: profile.education)
                     }
                 }
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.groups != nil) {
-                        CategoryAndDetails(category: "Groups", details: profile.groups,spacing: 60)
+                        CategoryAndDetails(category: "Groups", bodyText: profile.groups,verticalSpacing: 60)
                     }
                 }
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.recordedMusic != nil) {
-                        CategoryAndDetails(category: "Recorded\nMusic", details: profile.recordedMusic)
+                        CategoryAndDetails(category: "Recorded\nMusic", bodyText: profile.recordedMusic)
                     }
                 }
             }
             Spacer()
-                .frame(height: 20)
+                .frame(height: 40)
             VStack {
                 Text("Studio Policy").headlineStyle()
+                Spacer()
+                .frame(height: 20)
+                HStack(alignment: .firstTextBaseline) {
+                    if (profile.studioPolicy != nil) {
+                        CategoryAndDetails(category: "", bodyText: profile.studioPolicy, horizontalSpacing: 20)
+                    }
+                }
             }
-        }.background(Color(.lightGray))
+            Spacer()
+        }
+        .background(Color(.lightGray))
+        }
     }
 }
 
@@ -60,7 +71,7 @@ struct ProfileView_Previews: PreviewProvider {
             groups: ["Sunday Valley", "Sturgill Simpson", "Anime Movies"],
             recordedMusic: ["CD", "Tape cassette"],
             picture: "electricGuitar",
-            studioPolicy: ["Practice makes perfect.", "Write a new song each week, or be prepared to improvise at the start of each lesson", "Don't take no slack from nobody"]))
+            studioPolicy: ["Practice makes perfect.", "Write a new song each week, or be prepared to improvise at the start of each lesson", "Don't take no slack from nobody","Practice makes perfect.", "Write a new song each week, or be prepared to improvise at the start of each lesson", "Don't take no slack from nobody","Practice makes perfect.", "Write a new song each week, or be prepared to improvise at the start of each lesson", "Don't take no slack from nobody","Practice makes perfect.", "Write a new song each week, or be prepared to improvise at the start of each lesson", "Don't take no slack from nobody"]))
     }
 }
 

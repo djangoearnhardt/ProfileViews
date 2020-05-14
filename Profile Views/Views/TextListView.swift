@@ -9,15 +9,16 @@
 import SwiftUI
 
 struct TextListView: View {
-    let details: [String]?
+    let bodyText: [String]?
+    var horizontalSpacing: CGFloat = 5
     
     var body: some View {
-        if details == nil {
+        if bodyText == nil {
             return AnyView(EmptyView())
         } else {
             
-            return AnyView(VStack(alignment: .leading, spacing: 5) {
-                ForEach(details!, id: \.self) { degree in
+            return AnyView(VStack(alignment: .leading, spacing: horizontalSpacing) {
+                ForEach(bodyText!, id: \.self) { degree in
                     Text("\(degree)").bodyStyle()
                 }
                 }
@@ -28,6 +29,6 @@ struct TextListView: View {
 
 struct BannerView_Previews: PreviewProvider {
     static var previews: some View {
-        TextListView(details: ["The Streets", "West Virginia University"])
+        TextListView(bodyText: ["The Streets", "West Virginia University"])
     }
 }

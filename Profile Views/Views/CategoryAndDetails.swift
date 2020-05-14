@@ -10,16 +10,17 @@ import SwiftUI
 
 struct CategoryAndDetails: View {
     let category: String
-    let details: [String]?
-    var spacing: CGFloat = 40
+    let bodyText: [String]?
+    var verticalSpacing: CGFloat = 40
+    var horizontalSpacing: CGFloat = 10
     
     var body: some View {
         
         return AnyView(
-            HStack(alignment: .firstTextBaseline, spacing: spacing) {
+            HStack(alignment: .firstTextBaseline, spacing: verticalSpacing) {
                 Text(category).bodyStyle()
                 VStack {
-                    TextListView(details: details)
+                    TextListView(bodyText: bodyText, horizontalSpacing: horizontalSpacing)
                 }
             }
         )
@@ -29,6 +30,6 @@ struct CategoryAndDetails: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryAndDetails(category: "Education", details: ["Sunday Valley", "Sturgill Simpson", "Anime Movies"])
+        CategoryAndDetails(category: "Education", bodyText: ["Sunday Valley", "Sturgill Simpson", "Anime Movies"])
     }
 }
