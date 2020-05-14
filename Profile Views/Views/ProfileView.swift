@@ -28,17 +28,17 @@ struct ProfileView: View {
             VStack(alignment: .leading, spacing: 20) {
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.education != nil) {
-                        CategoryAndDetails(category: "Education", bodyText: profile.education)
+                        CategoryAndDetails(iconName: "book.fill", category: "Education", bodyText: profile.education)
                     }
                 }
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.groups != nil) {
-                        CategoryAndDetails(category: "Groups", bodyText: profile.groups,verticalSpacing: 60)
+                        CategoryAndDetails(iconName: "person.3.fill", category: "Groups", bodyText: profile.groups,verticalSpacing: 60)
                     }
                 }
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.recordedMusic != nil) {
-                        CategoryAndDetails(category: "Recorded\nMusic", bodyText: profile.recordedMusic)
+                        CategoryAndDetails(iconName: "music.note.list", category: "Recorded\nMusic", bodyText: profile.recordedMusic)
                     }
                 }
             }
@@ -50,7 +50,7 @@ struct ProfileView: View {
                 .frame(height: 20)
                 HStack(alignment: .firstTextBaseline) {
                     if (profile.studioPolicy != nil) {
-                        CategoryAndDetails(category: "", bodyText: profile.studioPolicy, horizontalSpacing: 20)
+                        CategoryAndDetails(iconName: "metronome", category: "", bodyText: profile.studioPolicy, horizontalSpacing: 20)
                     }
                 }
             }

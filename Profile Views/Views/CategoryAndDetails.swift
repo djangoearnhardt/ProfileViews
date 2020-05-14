@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct CategoryAndDetails: View {
+    let iconName: String
     let category: String
     let bodyText: [String]?
     var verticalSpacing: CGFloat = 40
@@ -17,8 +18,8 @@ struct CategoryAndDetails: View {
     var body: some View {
         
         return AnyView(
-            HStack(alignment: .firstTextBaseline, spacing: verticalSpacing) {
-                Text(category).bodyStyle()
+            HStack(alignment: .center, spacing: verticalSpacing) {
+                IconAndText(iconName: iconName, text: category)
                 VStack {
                     TextListView(bodyText: bodyText, horizontalSpacing: horizontalSpacing)
                 }
@@ -30,6 +31,6 @@ struct CategoryAndDetails: View {
 
 struct CategoryView_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryAndDetails(category: "Education", bodyText: ["Sunday Valley", "Sturgill Simpson", "Anime Movies"])
+        CategoryAndDetails(iconName: "book.fill", category: "Education", bodyText: ["Sunday Valley", "Sturgill Simpson", "Anime Movies"])
     }
 }

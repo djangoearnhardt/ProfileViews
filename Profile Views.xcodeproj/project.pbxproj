@@ -24,6 +24,7 @@
 		422558A224676EA300256806 /* QuattrocentoSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4225589E24676EA300256806 /* QuattrocentoSans-Bold.ttf */; };
 		422558A324676EA300256806 /* QuattrocentoSans-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4225589F24676EA300256806 /* QuattrocentoSans-BoldItalic.ttf */; };
 		422558A924677D8D00256806 /* TextListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 422558A824677D8D00256806 /* TextListView.swift */; };
+		42E58F67246D924E00917505 /* IconAndText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E58F66246D924E00917505 /* IconAndText.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		4225589E24676EA300256806 /* QuattrocentoSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QuattrocentoSans-Bold.ttf"; sourceTree = "<group>"; };
 		4225589F24676EA300256806 /* QuattrocentoSans-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QuattrocentoSans-BoldItalic.ttf"; sourceTree = "<group>"; };
 		422558A824677D8D00256806 /* TextListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextListView.swift; sourceTree = "<group>"; };
+		42E58F66246D924E00917505 /* IconAndText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconAndText.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				42012A272469913A00FFBE8C /* BusinessCardView.swift */,
 				42012A302469A23700FFBE8C /* CategoryAndDetails.swift */,
 				422558A824677D8D00256806 /* TextListView.swift */,
+				42E58F66246D924E00917505 /* IconAndText.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 				42012A312469A23700FFBE8C /* CategoryAndDetails.swift in Sources */,
 				42012A282469913A00FFBE8C /* BusinessCardView.swift in Sources */,
 				42012A2D2469973200FFBE8C /* Fonts.swift in Sources */,
+				42E58F67246D924E00917505 /* IconAndText.swift in Sources */,
 				4225589924676DE500256806 /* ProfileView.swift in Sources */,
 				4225588424676CCE00256806 /* SceneDelegate.swift in Sources */,
 				4225588624676CCE00256806 /* ContentView.swift in Sources */,
